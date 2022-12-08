@@ -1,0 +1,169 @@
+html, body {
+    background: hsl(217, 54%, 11%);
+}
+
+.container-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+.footer, a {
+    cursor: pointer;
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    padding-top: 16px;
+    display: -moz-inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    text-align: left;
+    display: block;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    background: hsl(216, 50%, 16%);
+    border-radius: 5%;
+    align-items: center;
+    width: 320px;
+    height: auto;
+}
+
+.image-placeholder {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    display: block;
+    width: 100%;
+    height: 300px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay {
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    background: hsl(178, 100%, 50%);
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.overlay img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    display: block;
+}
+
+.container:hover .overlay {
+    opacity: 0.8;
+    border-radius: 5%;
+}
+
+.container:hover .icon {
+    opacity: 1;
+}
+
+.card, .detail {
+    text-align: left;
+    padding: 10px;
+
+}
+
+.text {
+    display: block;
+    position: relative;
+    text-align: left;
+    font-family: Outfit, sans-serif;
+}
+
+.title {
+    display: inline-flex;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.title:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.description {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    word-wrap: break-word;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.value {
+    color: hsl(178, 100%, 50%);
+}
+
+.timeLeft {
+    float: right;
+    color: hsl(215, 51%, 70%);
+}
+
+.hr {
+    margin-top: 20px;
+    border: 0.001rem solid hsl(215, 51%, 70%);
+}
+
+.profile-pic {
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    clear: none;
+    opacity: 1;
+    display: inline-block;
+}
+
+.profile-pic img {
+    display: block;
+    float: left;
+    border: 1px solid white;
+    border-radius: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.author {
+    display: block;
+    float: left;
+    margin-top: 5px;
+    margin-left: 16px;
+    color: hsl(215, 51%, 70%);
+    text-align: center;
+}
+
+.author a {
+    text-decoration: none;
+}
+
+.author a:hover {
+    color: hsl(178, 100%, 50%);
+}
